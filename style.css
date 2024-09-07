@@ -1,0 +1,84 @@
+/* body Style */
+body {
+font-family:  sans-serif;
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+height: 100vh;
+background: radial-gradient(circle, rgba(4,255,246,1) 0%, rgba(0,118,255,1) 100%);
+}
+.container {
+    background-color: rgb(195, 232, 245);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: noneGlwe 1s infinite alternate;
+}
+@keyframes noneGlwe{
+    from {
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+    to {
+        box-shadow: 0px 0px 10px 0px #0036f9,
+                    0px 0px 20px 0px #1980da,
+                    0px 0px 30px 0px #0fe2d4;
+    }
+} 
+/* H1 color */
+.h1{
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+textarea{
+    width:300px;
+    height: 250px;
+    margin: 10px auto;
+    border-radius: 10px;
+    color:rgb(0, 0, 0);
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border:  1px solid #fff;
+    resize: none;
+    animation: slidIN 1s ease-in-out;
+}
+/* Key Frame Animation  */
+@keyframes slidIN {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* button stayle */
+button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(0,118,255,1);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    animation: slidIN 1s ease-in-out;
+    transition:  background-color 0.3s ease-in-out;
+}
+button:hover {
+    background-color: rgba(73, 153, 215, 0.884);
+}
+#reuslt {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #060606;
+    font-weight: bold;
+    animation: slidIN 1s ease-in-out;
+}
