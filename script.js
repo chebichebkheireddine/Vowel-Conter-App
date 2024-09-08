@@ -11,7 +11,7 @@ function chackVowle(){
 
  }
  const result = document.getElementById("reuslt");
- result.textContent = `Number is: ${vowelsCount}`;
+ result.textContent = `Result : ${vowelsCount}`;
 
 }
 function isVowel(chat){
